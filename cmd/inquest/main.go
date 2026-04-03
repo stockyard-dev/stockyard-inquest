@@ -26,7 +26,7 @@ func main() {
 	}
 	defer db.Close()
 
-	srv := server.New(db)
+	srv := server.New(db, server.DefaultLimits())
 
 	fmt.Printf("\n  Inquest — Self-hosted incident manager\n")
 	fmt.Printf("  ─────────────────────────────────\n")
